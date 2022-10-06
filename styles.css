@@ -1,27 +1,27 @@
 body {
-    font-family: Helvetica;
+    font-family: Tahoma;
     padding: 0;
     margin: 0;
 }
 
 nav {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 5px;
     background: white;
     color: black;
-    border-style: solid;
-    border-color: black;
+    filter: drop-shadow(16px 16px 10px black);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-
 ul {
-    margin: 10px;
     padding: 0;
     list-style-type: none;
 }
 
 li {
     display: inline-block;
-    margin: 10px;
+    margin: 0px 20px;
     font-size: 25px;
     color: rgb(1,33,44);
 }
@@ -32,8 +32,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
     color: rgb(1,33,44);
+    border-bottom: 5px solid gray;
 }
 
 header {
@@ -45,4 +45,34 @@ header {
     padding: 0;
     margin: 0;
     overflow-x: hidden; 
+}
+
+.dashboard {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 800px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+footer {
+    margin: 0px;
+    padding: 30px;
+    background: black;
+    color: white;
+    padding-left: 50px;
+}
+
+@media screen and (max-width:400px) {
+    .features {
+        background:red;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .features {
+        background:pink;
+    }
 }
